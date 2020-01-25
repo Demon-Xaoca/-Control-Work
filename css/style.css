@@ -29,7 +29,6 @@ p {
     list-style: none;
     width: 24%;
     float:left;
-    border-top: 10px solid #ffffff ;
 }
 .list:after {
     content: '';
@@ -39,16 +38,55 @@ p {
 .list ul li {
     margin-bottom: 25px;
     padding-left: 26px;
+    font-size: 20px;
+}
+ul li:first-child{
+    text-align: center;
+    color: #ffffff;
+    padding: 13px 0 13px;
 }
 ul:first-of-type li:first-child{
     background-color: #1f2c39;
     border-radius: 17px 0 0 17px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 12px 0 13px 0;
+    padding-top: 12px;
+}
+ul:first-of-type li:not(:first-child){
+    color: #1f2c39;
 }
 ul:first-of-type {
     border-right: 3px solid #1f2c39;
 }
-ul:nth-child(2) li:first-child {}
+ul:before{
+    content: "";
+    display: block;
+    height: 10px;
+    background-color: #ffffff;
+}
+ul:nth-of-type(2) li:first-child{
+    background-color: #03246c;
+}
+ul:nth-of-type(2) li:not(:first-child){
+    color: #03246c;
+}
+ul:nth-of-type(2){
+    border-right: 3px solid #03246c;
+}
+ul:nth-of-type(3) li:first-child{
+    background-color: #028090;
+}
+ul:nth-of-type(3) li:not(:first-child){
+    color: #028090;
+}
+ul:nth-of-type(3){
+    border-right: 3px solid #028090;
+}
+ul:last-of-type li:first-child{
+    background-color: #28aeaf;
+    padding: 14px 0 12px;
+}
+ul:last-of-type li:not(:first-child){
+    color: #28aeaf;
+}
+ul:last-of-type{
+    border-right: 3px solid #28aeaf;
+}
